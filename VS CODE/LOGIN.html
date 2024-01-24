@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login & Signup</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  color:aliceblue;
+  background-image:url(rose.jpg) ;
+  background-size: cover; 
+  background-repeat: no-repeat;     
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 200px;
+  border: 1px solid #ddd; 
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;  
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px; 
+  border: 1px solid #ccc;
+  border-radius: 50px;  
+}
+
+.btn {
+  padding: 12px 200px;
+  background-color: #4c6aaf;
+  color: white;  
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Login</h1>
+  <form>
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username">
+    
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password">
+        
+    <button type="submit" class="btn">Login</button>
+  </form>
+  
+  <div class="signup">
+    Don't have an account? <a href="#">Signup</a>
+  </div>
+</div>
+
+<div class="container" style="display: none;">
+  <h1>Signup</h1>
+  <form>
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username">
+    
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password">
+    
+    <label for="confirm_password">Confirm Password</label>
+    <input type="password" id="confirm_password" name="confirm_password">
+    
+    <button type="submit" class="btn">Signup</button>
+  </form>
+  
+  <div class="login">
+    Already have an account? <a href="#">Login</a> 
+  </div>
+</div>
+
+</body>
+</html>

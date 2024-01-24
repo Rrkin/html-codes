@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Projects</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image:url(rose.jpg);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Add more styling as needed */
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Add Projects</h1>
+    </header>
+
+    <section>
+        <form>
+            <label for="projectType">Project Type (Paid/Free for All):</label>
+            <input type="text" id="projectType" name="projectType" required>
+
+            <label for="projectLeader">Project Leader (Name):</label>
+            <input type="text" id="projectLeader" name="projectLeader" required>
+
+            <label for="members">Members:</label>
+            <input type="text" id="members" name="members" placeholder="Add members...">
+            <!-- You may consider adding a button to dynamically add more member input fields -->
+
+            <label for="projectTitle">Project Title:</label>
+            <input type="text" id="projectTitle" name="projectTitle" required>
+
+            <label for="projectDescription">Project Description:</label>
+            <textarea id="projectDescription" name="projectDescription" rows="4" required></textarea>
+
+            <label for="projectAbstract">Project Abstract:</label>
+            <textarea id="projectAbstract" name="projectAbstract" rows="4" required></textarea>
+
+            <label for="components">Components Required:</label>
+            <input type="text" id="components" name="components" required>
+
+            <label for="images">Images:</label>
+            <input type="file" id="images" name="images" accept="image/*" multiple>
+            <!-- You may consider adding a button to dynamically add more image input fields -->
+
+            <label for="videos">Videos:</label>
+            <input type="file" id="videos" name="videos" accept="video/*" multiple>
+            <!-- You may consider adding a button to dynamically add more video input fields -->
+
+            <label for="workingLogic">Working and Logic:</label>
+            <textarea id="workingLogic" name="workingLogic" rows="4" required></textarea>
+
+            <label for="thumbnail">Thumbnail (Image):</label>
+            <input type="file" id="thumbnail" name="thumbnail" accept="image/*" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>

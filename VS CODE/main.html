@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AA...FORUM</title>
+    <style>
+        body {
+            font-family: cursive;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            opacity: 0;
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #444;
+            padding: 10px 0;
+            border-bottom: 2px solid #fff;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            display: inline-block;
+            transition: background-color 0.3s;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+
+        footer {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 1em 0;
+            background-color: #444;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #search-container {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #search-input {
+            padding: 8px;
+            width: 200px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        #search-input:focus {
+            border-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AA...FORUM</h1>
+        <nav>
+            <a href="#">HOME</a>
+            <a onclick="toggleSearch()">SEARCH</a>
+            <a href="#">ADD PROJECT</a>
+            <a href="#">ABOUT ME</a>
+        </nav>
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Enter your search">
+        </div>
+    </header>
+
+    <div class="container">
+        <p>Welcome to AA...FORUM! This is a place for meaningful discussions.</p>
+        
+    </div>
+
+    <footer>
+        &copy; 2024 AA...FORUM. All rights reserved.
+    </footer>
+
+    <script>
+        function toggleSearch() {
+            var searchContainer = document.getElementById('search-container');
+            searchContainer.style.display = (searchContainer.style.display === 'none' || searchContainer.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
